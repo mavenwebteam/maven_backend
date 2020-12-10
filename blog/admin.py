@@ -47,6 +47,8 @@ class RecordAdmin(admin.ModelAdmin):
 	list_filter = ['name', 'intime', 'outtime', 'absent', 'date']
 	actions = [export_to_csv]
 
+
+
 admin.site.register(Post, PostAdmin)
 admin.site.register(Profile, ProfileAdmin)
 admin.site.register(Record, RecordAdmin)
